@@ -13,7 +13,7 @@ apt-get update
 RUN apt-get install --assume-yes mesos python-software-properties curl default-jdk
 
 ## MARATHON ##
-ADD http://downloads.mesosphere.io/marathon/marathon-0.6.1/marathon-0.6.1.tgz /tmp/marathon.tgz
+ADD http://downloads.mesosphere.com/marathon/v1.0.0-RC1/marathon-1.0.0-RC1.tgz /tmp/marathon.tgz
 RUN mkdir -p /opt/marathon && tar xzf /tmp/marathon.tgz -C /opt/marathon --strip=1 && rm -f /tmp/marathon.tgz
 
 EXPOSE 8080
