@@ -10,7 +10,7 @@ RUN apt-key adv --keyserver keyserver.ubuntu.com --recv E56151BF && \
 echo deb http://repos.mesosphere.io/ubuntu trusty main > /etc/apt/sources.list.d/mesosphere.list && \
 apt-get update
 
-RUN apt-get -y install marathon=0.10.1-1.0.416.ubuntu1404 mesos=0.22.1-1.0.ubuntu1404
+RUN apt-get -y install marathon=0.10.1-1.0.416.ubuntu1404 mesos=0.28.0-2.0.16.ubuntu1404
 
 EXPOSE 8080
 WORKDIR /opt/marathon

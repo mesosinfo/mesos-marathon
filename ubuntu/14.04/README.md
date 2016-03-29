@@ -22,7 +22,7 @@ For this setup, we will need 3 servers with Docker installed on it.
 		-p 8080:8080 \
 		--master zk://${ZOOKEEPER_HOST_IP_1}:2181,${ZOOKEEPER_HOST_IP_2}:2181,${ZOOKEEPER_HOST_IP_3}:2181/mesos \
 		--zk zk://${ZOOKEEPER_HOST_IP_1}:2181,${ZOOKEEPER_HOST_IP_2}:2181,${ZOOKEEPER_HOST_IP_3}:2181/marathon \
-		mesosinfo/mesos-marathon
+		mesosinfo/mesos-marathon:0.10.1-ubuntu-14.04
 
     On host #2 (mesos master #2)
 
@@ -31,7 +31,7 @@ For this setup, we will need 3 servers with Docker installed on it.
 		-p 8080:8080 \
 		--master zk://${ZOOKEEPER_HOST_IP_1}:2181,${ZOOKEEPER_HOST_IP_2}:2181,${ZOOKEEPER_HOST_IP_3}:2181/mesos \
 		--zk zk://${ZOOKEEPER_HOST_IP_1}:2181,${ZOOKEEPER_HOST_IP_2}:2181,${ZOOKEEPER_HOST_IP_3}:2181/marathon \
-		mesosinfo/mesos-marathon
+		mesosinfo/mesos-marathon:0.10.1-ubuntu-14.04
 
     On host #3 (mesos master #3)
 
@@ -40,5 +40,5 @@ For this setup, we will need 3 servers with Docker installed on it.
 		-p 8080:8080 \
 		--master zk://${ZOOKEEPER_HOST_IP_1}:2181,${ZOOKEEPER_HOST_IP_2}:2181,${ZOOKEEPER_HOST_IP_3}:2181/mesos \
 		--zk zk://${ZOOKEEPER_HOST_IP_1}:2181,${ZOOKEEPER_HOST_IP_2}:2181,${ZOOKEEPER_HOST_IP_3}:2181/marathon \
-		mesosinfo/mesos-marathon
+		mesosinfo/mesos-marathon:0.10.1-ubuntu-14.04
 	
